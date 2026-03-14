@@ -1,0 +1,130 @@
+
+.nav-list {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: auto;
+    list-style: none;
+
+}
+.nav-links {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+
+}
+
+div {
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center; 
+    height: 100%; 
+    padding: 0 10px;
+    gap: 5px;
+
+}
+
+.flex-item {
+  margin: 5px;
+}
+
+img {
+    height: 800px;
+}
+
+h1 {
+    font-size: 85px;
+    
+}
+
+p {
+    font-size: 25px;
+    margin: 0; 
+    line-height: 1.5;
+    align-items: center;
+}
+
+h2 {
+    font-size: 25px;
+    margin-bottom: 50px; 
+    line-height: 1.5;
+    Padding: 50px;
+   
+}
+
+body {
+    background-image: linear-gradient(-45deg, #FFC796 0%, #FF6B95 100%);
+    background: cover;
+    height: 100%;
+    width: 100%;
+    font-family: "Comic Sans Ms", "Comic Sans";
+    align-items: center;
+    margin-top: 50px;
+    margin-right:20px;
+    margin-left: 20px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+
+
+nav ul li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #000;
+    
+    transition: transform 0.5s ease;
+}
+
+nav ul li a:hover {
+   
+    transform: rotate(20deg);
+}
+
+
+
+/* TEST */
+
+
+
+#animated-text span {
+  display: inline-block;
+  color: black; 
+  transition: color 0.3s ease, transform 0.1s ease;
+
+}
+
+#animated-text span:hover{
+    transform: scale(1.4);
+}
+
+
+#animated-text {
+  font-size: 170px; 
+  color: black;
+}
+
+.pop {
+  transform: translateY(-15px) scale(1.1); 
+}
+
+
+
+/*.  TEST.  */
+
+.animated-banner { 
+  animation: fadeIn 5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
