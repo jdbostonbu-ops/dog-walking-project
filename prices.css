@@ -10,8 +10,7 @@
     width: 100%; 
     max-width: 1000px; 
     
-    margin: 100px auto 50px auto; 
-
+    margin: 80px auto 50px auto; 
     padding: 0;
     font-size: 25px;
 }
@@ -21,6 +20,7 @@ nav {
     display: flex;
     justify-content: center;
 }
+
 
 
 div {
