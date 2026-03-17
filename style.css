@@ -59,7 +59,7 @@ body {
     background: cover;
     height: 100%;
     width: 100%;
-    font-family: "Comic Sans Ms", "Comic Sans";
+    font-family: "Comic Sans MS", "Chalkboard SE", "Comic Neue";
     align-items: center;
     margin-top: 50px;
     margin-right:20px;
@@ -97,6 +97,9 @@ nav ul li a:hover {
   display: inline-block;
   color: black; 
   transition: color 0.3s ease, transform 0.1s ease;
+  font-style: 'Poppins', "Comic Sans MS", "Chalkboard SE", "Comic Neue";
+  -webkit-tap-highlight-color: transparent; 
+  user-select: none;  
 
 }
 
@@ -120,6 +123,7 @@ nav ul li a:hover {
 
 .animated-banner { 
   animation: fadeIn 5s ease-in-out forwards;
+  font-style: "Comic Sans MS", "Chalkboard SE", "Comic Neue"; 
 }
 
 @keyframes fadeIn {
