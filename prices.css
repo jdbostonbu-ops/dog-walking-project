@@ -1,13 +1,27 @@
 .nav-list {
     list-style: none;
-    text-justify: center;
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-start;
-    justify-content: space-around;
+    
+  
+    justify-content: space-between; 
+    
+  
+    width: 100%; 
+    max-width: 1000px; 
+    
+    margin: 100px auto 50px auto; 
+
+    padding: 0;
     font-size: 25px;
-    margin-right: 80px;
 }
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 
 div {
     display: flex;
