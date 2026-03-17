@@ -103,7 +103,9 @@ nav ul li a:hover {
   display: inline-block;
   color: black; 
   transition: color 0.3s ease, transform 0.1s ease;
-
+  -webkit-tap-highlight-color: transparent; 
+  user-select: none;
+  font-family: 'Poppins', "Comic Sans MS", "Chalkboard SE", "Comic Neue";
 }
 
 #animated-text span:hover{
