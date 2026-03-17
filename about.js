@@ -17,7 +17,7 @@ if (audio) {
     audio.preservesPitch = false; 
 }
 
-const text = "Our Happy Friends!";
+const text = "Pawsibilities!";
 textContainer.innerHTML = ""; 
 
 text.split("").forEach((letter, index) => {
