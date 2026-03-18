@@ -33,12 +33,6 @@ div {
 
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* This prevents padding from pushing the box out */
-}
-
 .prices-content img {
     height: 800px;         /* Your desktop height */
     width: auto;           /* Keeps it from stretching */
