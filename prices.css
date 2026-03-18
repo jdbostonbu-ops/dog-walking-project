@@ -221,6 +221,13 @@ animation-play-state:paused;
     font-size: 35px !important; /* Drastically smaller so it fits on one line */
     text-align: center;
   }
+    
+  h2 {
+    font-size: 28px !important; /* Adjust this number until it fits nicely */
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 15px;
+  }
   
   #animated-text {
     font-size: 45px !important; /* Shrinks the 170px text so it stops spilling */
