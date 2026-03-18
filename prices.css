@@ -232,29 +232,22 @@ img {
     margin: 0 auto;    /* Keeps it centered */
     }
 
-  table {
-    /* This centers the WHOLE table on the phone screen */
-    margin-left: auto;
-    margin-right: auto;
-    width: 95%; /* Gives a tiny bit of breathing room on the edges */
-    display: table; /* Ensures it stays a table structure */
+  table, th, td {
+    /* Shrink those 60px margins so they don't push the table off-screen */
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    
+    /* Shrink the font so the 'flex' boxes don't get too wide */
+    font-size: 16px !important;
+    
+    /* Keep them centered but let them wrap if they run out of space */
+    flex-wrap: wrap; 
   }
 
-  th, td {
-    /* This keeps your data aligned to the left (your favorite look) */
-    text-align: left; 
-    
-    /* Shrink the font so it fits on a small screen */
-    font-size: 18px; 
-    
-    /* Removes any leftover 60px margins that were "nudging" it */
-    margin: 0;
-    padding: 10px;
-    
-    /* Ensures cells act like normal table parts */
-    display: table-cell; 
+  .flex-container {
+    flex-direction: column; /* Stacks the content vertically on phones */
+    align-items: center;
   }
-
 }
    
     
