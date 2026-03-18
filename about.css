@@ -189,6 +189,20 @@ nav ul li a:hover {
     font-size: 170px;/* Scaled down significantly so it doesn't bleed off-screen */
 }
 
+/* MOBILE (Phone) */
+@media (max-width: 600px) {
+  nav {
+    justify-content: center; /* On mobile, "space-between" often looks messy; centering is cleaner */
+    flex-wrap: wrap; /* This is the MAGIC: it lets links drop to a second line if they're too wide */
+    padding: 0 10px; /* Shrink the side-padding so you have more room for text */
+    gap: 15px; /* Manually set the space between links since "between" doesn't work well on tiny screens */
+  }
+
+  nav a {
+    font-size: 16px; /* Ensure the links themselves aren't too huge for the phone */
+  }
+}
+
 
 
 
