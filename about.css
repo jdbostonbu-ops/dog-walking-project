@@ -191,6 +191,20 @@ nav ul li a:hover {
     line-height: 1.2;
     margin-bottom: 15px;
   }
+
+   p span {
+    font-size: 24px !important; /* Shrinks it to a readable mobile size */
+    display: block;             /* Ensures it doesn't overlap other text */
+    text-align: center;
+  }
+
+  /* This targets the rest of the paragraph text */
+  p {
+    font-size: 18px !important; 
+    line-height: 1.6;           /* Adds space between lines for easier reading */
+    padding: 0 15px;            /* Keeps text from touching the screen edges */
+    text-align: center;
+  }
   
   #animated-text {
     font-size: 45px !important; /* Shrinks the 170px text so it stops spilling */
