@@ -255,6 +255,9 @@ img {
     /* Keep them centered but let them wrap if they run out of space */
     flex-wrap: wrap; 
   }
+    .prices-content img {
+        height: auto !important; /* Fixes 800px height for phones */
+    }
 
   .flex-container {
     flex-direction: column; /* Stacks the content vertically on phones */
