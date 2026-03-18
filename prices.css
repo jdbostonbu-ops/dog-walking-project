@@ -34,16 +34,23 @@ div {
 }
 
 .prices-content {
-    text-align: center; /* Backup centering */
-    width: 100%;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important; /* Forces the image to the horizontal center */
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: hidden; /* Prevents the image from 'poking out' the side */
 }
 
+/* 2. Style the image to be responsive and centered */
 .prices-content img {
     height: 800px;         /* Your desktop height */
-    width: auto;           /* Keeps it from stretching */
-    max-width: 100%;       /* STOPS THE NUDGE TO THE RIGHT: Keeps it inside the screen */
-    display: block;
-    margin: 0 auto;
+    width: auto !important;/* Overrides HTML width="1300" */
+    max-width: 100%;       /* Ensures it fits inside the screen */
+    display: block !important;
+    margin: 0 auto !important;
+    float: none !important; /* Removes any accidental nudges */
 }
 
 img {
