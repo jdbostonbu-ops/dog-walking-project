@@ -38,6 +38,12 @@ div {
     text-align: center; /* A backup way to center items inside a box */
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* This prevents padding from pushing the box out */
+}
+
 img {
     height: 800px;
     display: block;    /* Changes it from "text" behavior to "box" behavior */
@@ -230,7 +236,7 @@ img {
     display: block;
     margin: 0 auto;    /* Keeps it centered */
     }
-   
+
     table, th, td {
     /* Remove the huge 60px margins that push it off-screen */
     margin-left: auto;
