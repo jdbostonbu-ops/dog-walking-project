@@ -83,13 +83,19 @@ table, th, td {
   text-align: center;
   margin-bottom: 50px;
   margin-top: 20px;
-  margin-right: 60px;
-  margin-left: 60px;
+  margin-left: auto;
+  margin-right: auto;
   font-family: "Comic Sans MS", "Chalkboard SE", "Comic Neue";
   justify-content: center;
   align-items: center;
   display: flex;
   padding: 10px;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto; /* Adds a horizontal scrollbar ONLY if the table is too wide */
+    -webkit-overflow-scrolling: touch; /* Makes scrolling smooth on iPhones */
 }
 
 .flex-container {
@@ -183,10 +189,52 @@ animation-play-state:paused;
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   h1 {
     font-size: 40px; /* Cut in half to scale phone screens */
   }
  #animated-text {
     font-size: 170px;/* Scaled down significantly so it doesn't bleed off-screen */
+
+/* MOBILE (Phone) */
+
+ nav {
+    justify-content: center; /* On mobile, "space-between" often looks messy; centering is cleaner */
+    flex-wrap: wrap; /* This is the MAGIC: it lets links drop to a second line if they're too wide */
+    padding: 0 10px; /* Shrink the side-padding so you have more room for text */
+    gap: 15px; /* Manually set the space between links since "between" doesn't work well on tiny screens */
+  }
+
+nav a {
+    font-size: 16px; /* Ensure the links themselves aren't too huge for the phone */
+  }
+
+img {
+    height: auto;      /* Essential: lets the height shrink naturally */
+    width: 100%;       /* Makes the image fill the phone screen width */
+    max-width: 400px;  /* Optional: keeps it from getting TOO big on large phones */
+    display: block;
+    margin: 0 auto;    /* Keeps it centered */
+    }
+   
+    table, th, td {
+    /* Remove the huge 60px margins that push it off-screen */
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Shrink the font slightly so words don't wrap weirdly */
+    font-size: 18px; 
+    
+    /* Important: Remove display:flex if it's making columns stack strangely */
+    display: table-cell; 
+    
+    /* Keep your centering */
+    text-align: center;
+  }
+
+  table {
+    display: table; /* Ensures the whole table stays a table */
+    width: 90%;     /* Takes up most of the phone screen but leaves a small gap */
+    margin-bottom: 30px;
+  }
 }
