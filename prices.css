@@ -43,9 +43,13 @@ img {
     display: block;    /* Changes it from "text" behavior to "box" behavior */
     margin-left: auto;  /* Pushes from the left */
     margin-right: auto; /* Pushes from the right, meeting in the middle */
-    margin-top: 0px;
+   
     margin-bottom: 0px;
     padding: 0;
+    
+    width: auto;           /* Keeps the photo from stretching */
+    margin: 0 auto;        /* The standard way to center a block element */
+    max-width: 100%;       /* Safety: Prevents it from being wider than the phone */
 }
 
 h1 {
