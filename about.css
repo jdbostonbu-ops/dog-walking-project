@@ -179,29 +179,70 @@ nav ul li a:hover {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   h1 {
-    font-size: 40px; /* Cut in half to scale phone screens */
+    font-size: 35px !important; /* Drastically smaller so it fits on one line */
+    text-align: center;
   }
-  h2 {
-    font-size: 40px; /Scale for Mobile deive */
- #animated-text {
-    font-size: 170px;/* Scaled down significantly so it doesn't bleed off-screen */
-}
-
+  
+  #animated-text {
+    font-size: 45px !important; /* Shrinks the 170px text so it stops spilling */
+    text-align: center;
+    line-height: 1.2;
+    display: block;
+    width: 100%;
+  }
 /* MOBILE (Phone) */
-@media (max-width: 600px) {
+
   nav {
-    justify-content: center; /* On mobile, "space-between" often looks messy; centering is cleaner */
-    flex-wrap: wrap; /* This is the MAGIC: it lets links drop to a second line if they're too wide */
-    padding: 0 10px; /* Shrink the side-padding so you have more room for text */
-    gap: 15px; /* Manually set the space between links since "between" doesn't work well on tiny screens */
+    width: 100% !important;
+    display: flex !important;
+    justify-content: space-around !important; /* Spreads links across the screen */
+    padding: 10px 0;
+    margin: 0;
   }
 
-  nav a {
+nav a {
     font-size: 16px; /* Ensure the links themselves aren't too huge for the phone */
   }
+
+img {
+    height: auto;      /* Essential: lets the height shrink naturally */
+    width: 100%;       /* Makes the image fill the phone screen width */
+    max-width: 400px;  /* Optional: keeps it from getting TOO big on large phones */
+    display: block;
+    margin: 0 auto;    /* Keeps it centered */
+    }
+
+  table, th, td {
+    /* Shrink those 60px margins so they don't push the table off-screen */
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    
+    /* Shrink the font so the 'flex' boxes don't get too wide */
+    font-size: 16px !important;
+    
+    /* Keep them centered but let them wrap if they run out of space */
+    flex-wrap: wrap; 
+  }
+    .prices-content img {
+        height: auto !important; /* Fixes 800px height for phones */
+    }
+
+  .grid-container {
+    display: flex !important;
+    flex-direction: column !important; /* Stacks images vertically */
+    align-items: center !important;    /* Centers them perfectly */
+    width: 100% !important;
+    gap: 20px;
+  }
+
+  .grid-container img {
+    width: 90% !important; /* Makes images large but keeps a small gap on sides */
+    margin: 0 auto;
+  }
 }
+   
 
 
 
