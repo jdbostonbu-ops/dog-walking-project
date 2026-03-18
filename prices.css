@@ -33,6 +33,11 @@ div {
 
 }
 
+.prices-content {
+    text-align: center; /* Backup centering */
+    width: 100%;
+}
+
 .prices-content img {
     height: 800px;         /* Your desktop height */
     width: auto;           /* Keeps it from stretching */
