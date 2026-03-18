@@ -92,21 +92,31 @@ body {
    
 }
 
-table, th, td {
+table {
  
   border-radius: 50px;
-  font-size: 23px;
-  text-align: center;
   margin-bottom: 50px;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
-  font-family: "Comic Sans MS", "Chalkboard SE", "Comic Neue";
+  width: 90%;            /* Adjust as needed */
+  max-width: 1200px;
+  
   justify-content: center;
   align-items: center;
   display: flex;
   padding: 10px;
 }
+
+   
+
+th, td {
+    font-size: 23px;
+    text-align: left;      /* FORCES text back to the left inside cells */
+    justify-content: flex-start; 
+    padding: 15px;         /* Keeps your nice spacing */
+}
+
 
 .table-wrapper {
     width: 100%;
@@ -233,24 +243,30 @@ img {
     margin: 0 auto;    /* Keeps it centered */
     }
 
-    table, th, td {
-    /* Remove the huge 60px margins that push it off-screen */
+  table {
+    /* This centers the WHOLE table on the phone screen */
     margin-left: auto;
     margin-right: auto;
-    
-    /* Shrink the font slightly so words don't wrap weirdly */
-    font-size: 18px; 
-    
-    /* Important: Remove display:flex if it's making columns stack strangely */
-    display: table-cell; 
-    
-    /* Keep your centering */
-    text-align: center;
+    width: 95%; /* Gives a tiny bit of breathing room on the edges */
+    display: table; /* Ensures it stays a table structure */
   }
 
-  table {
-    display: table; /* Ensures the whole table stays a table */
-    width: 90%;     /* Takes up most of the phone screen but leaves a small gap */
-    margin-bottom: 30px;
+  th, td {
+    /* This keeps your data aligned to the left (your favorite look) */
+    text-align: left; 
+    
+    /* Shrink the font so it fits on a small screen */
+    font-size: 18px; 
+    
+    /* Removes any leftover 60px margins that were "nudging" it */
+    margin: 0;
+    padding: 10px;
+    
+    /* Ensures cells act like normal table parts */
+    display: table-cell; 
   }
+
 }
+   
+    
+  
