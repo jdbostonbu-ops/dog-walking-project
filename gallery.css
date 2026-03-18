@@ -142,5 +142,12 @@ nav ul li a:hover {
 }
 
 
+@media (max-width: 600px) {
+  h1 {
+    font-size: 40px; /* Cut in half to scale phone screens */
+  }
+ #animated-text {
+    font-size: 170px;/* Scaled down significantly so it doesn't bleed off-screen */
+}
 
-/*.  TEST.  */
+
