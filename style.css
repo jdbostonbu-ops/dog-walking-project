@@ -35,7 +35,7 @@ img {
 }
 
 h1 {
-    font-size: 85px;
+    font-size: clamp (85px);
     
 }
 
@@ -47,7 +47,7 @@ p {
 }
 
 h2 {
-    font-size: 25px;
+    font-size: clamp (25px);
     margin-bottom: 50px; 
     line-height: 1.5;
     Padding: 50px;
@@ -109,7 +109,7 @@ nav ul li a:hover {
 
 
 #animated-text {
-  font-size: 170px; 
+  font-size: clamp (170px); 
   color: black;
 }
 
@@ -131,4 +131,10 @@ nav ul li a:hover {
   to { opacity: 1; }
 }
 
-
+@media (max-width: 600px) {
+  h1 {
+    font-size: 40px; /* Cut in half to scale phone screens */
+  }
+ #animated-text {
+    font-size: 170px;/* Scaled down significantly so it doesn't bleed off-screen */
+}
