@@ -93,30 +93,22 @@ body {
 }
 
 table {
- 
-  border-radius: 50px;
-  margin-bottom: 50px;
-  margin-top: 20px;
+  display: table;           /* Ensures it stays a grid on desktop */
   margin-left: auto;
   margin-right: auto;
-  width: 90%;            /* Adjust as needed */
-  max-width: 1200px;
-  
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  padding: 10px;
+  width: 90%;
+  border-collapse: separate;
+  border-spacing: 10px;
 }
-
-   
 
 th, td {
-    font-size: 23px;
-    text-align: left;      /* FORCES text back to the left inside cells */
-    justify-content: flex-start; 
-    padding: 15px;         /* Keeps your nice spacing */
+  display: table-cell;      /* FIX: Keeps columns horizontal on desktop */
+  text-align: left;         /* Your preferred left-aligned look */
+  padding: 15px;
+  font-size: 23px;
+  border-radius: 50px;
+  font-family: "Comic Sans MS", "Chalkboard SE", "Comic Neue";
 }
-
 
 .table-wrapper {
     width: 100%;
