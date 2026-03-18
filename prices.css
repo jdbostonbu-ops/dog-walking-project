@@ -35,8 +35,11 @@ div {
 
 img {
     height: 800px;
-    margin-bottom: 0px;
+    display: block;    /* Changes it from "text" behavior to "box" behavior */
+    margin-left: auto;  /* Pushes from the left */
+    margin-right: auto; /* Pushes from the right, meeting in the middle */
     margin-top: 0px;
+    margin-bottom: 0px;
     padding: 0;
 }
 
