@@ -33,15 +33,18 @@ div {
 
 }
 
-.parent-container {
-    padding: 0; /* Ensure no extra space is pushing the image to the right */
-    text-align: center; /* A backup way to center items inside a box */
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box; /* This prevents padding from pushing the box out */
+}
+
+.prices-content img {
+    height: 800px;         /* Your desktop height */
+    width: auto;           /* Keeps it from stretching */
+    max-width: 100%;       /* STOPS THE NUDGE TO THE RIGHT: Keeps it inside the screen */
+    display: block;
+    margin: 0 auto;
 }
 
 img {
