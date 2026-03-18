@@ -46,18 +46,11 @@ div {
 
 img {
     height: 800px;
-    display: block;    /* Changes it from "text" behavior to "box" behavior */
-    
-     /* The "Triple Threat" Centering */
-    margin-left: auto !important; 
-    margin-right: auto !important;
-    float: none !important; /* Removes any "nudging" from old styles */
-    margin-bottom: 0px;
-    padding: 0;
-    
-    width: auto;           /* Keeps the photo from stretching */
-    margin: 0 auto;        /* The standard way to center a block element */
-    max-width: 100%;       /* Safety: Prevents it from being wider than the phone */
+    width: auto;         /* Essential: keeps the shape correct */
+    display: block;      /* Required for margins to work */
+    margin-left: auto;   /* Centers horizontally */
+    margin-right: auto;
+    max-width: 100%;     /* Prevents the image from pushing past the screen edge */
 }
 
 h1 {
