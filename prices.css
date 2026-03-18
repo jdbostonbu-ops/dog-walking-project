@@ -41,9 +41,11 @@ div {
 img {
     height: 800px;
     display: block;    /* Changes it from "text" behavior to "box" behavior */
-    margin-left: auto;  /* Pushes from the left */
-    margin-right: auto; /* Pushes from the right, meeting in the middle */
-   
+    
+     /* The "Triple Threat" Centering */
+    margin-left: auto !important; 
+    margin-right: auto !important;
+    float: none !important; /* Removes any "nudging" from old styles */
     margin-bottom: 0px;
     padding: 0;
     
