@@ -1,38 +1,16 @@
-# dog-walking-project
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Home | Dog Care, Walking & Boarding | Gallery | Grooming</title>
-</head>
-<body>
+# Ruff | Professional Pet Care Platform 🐾
+A comprehensive service-based web application for dog walking, boarding, and grooming.
 
- <div class="animated-banner"><span style="font-size: 80px;">We Make Everything Pawsible!<span></div>
-       <nav class="navbar">
-    <ul class= "nav-list">
-        <li><a class="nav-links" href="index.html">Home</a></li>
-        <li><a class="nav-links" href="about.html">About</a></li>
-        <li><a class="nav-links" href="gallery.html">Gallery</a></li>
-        <li><a class="nav-links" href="prices.html">Prices</a></li>
-       
-    </ul>    
-   </nav>
+### 🦴 Key Technical Features
+- **Dynamic User Interface**: Features a custom "Animated Banner" and a responsive navigation system designed for high conversion rates.
+- **Micro-Interaction Design**: Clean, semantic HTML5 structure with a dedicated `data-router-wrapper` to support smooth page transitions.
+- **Service-Oriented Layout**: Optimized for local SEO, including business-critical information (GPS tracking simulation, real-time updates, and direct messaging features).
+- **Responsive Architecture**: A mobile-friendly design that prioritizes easy navigation for pet owners on the go.
 
+### 🛠️ Tech Stack
+- **Frontend**: Vanilla JavaScript (ES6+), Semantic HTML5
+- **Styling**: CSS3 (Flexbox for the index-presentation grid and custom animations)
+- **Concepts**: App-integration simulation, User-centric design, Local Business SEO
 
-        <div class="index-content">
-            <div class="index-presentation">
-                <p style="text-align: center;"><span style="font-size: 45px;">We are a piece of mind!</span><br>Dog walking provides healthy activity. Dogs get excercise and socialize with other dogs. The best part is that your dog is never alone.<br><br>Whether it's Walks, Drop-Ins, Sittings, or Boardings, choose the service that best fits<br>your pet's needs.Select from committed<br>Caregivers who understand your requirements.<br>Chat directly to ensure the perfect match!<br><br>Download our Ruff app! An App to track walks via GPS, communicate with your Caregiver, and enjoy real-time photo and video updates.</p>
-        </div>  
-                <img src="Dog.png" alt="index">
-            </div>
-
-<div class="center-div">
-<h2>110 Navigation Road, New London, CT 06320. Email: pawsibilities@paws.com. 1-860-555-1010</h2>
-</div>
-
-<script src="script.js" defer></script>
-</body>
-</html>
+### 🐕 Project Goal
+The goal of this project was to create a trustworthy, high-performance interface for a pet services business, focusing on clear communication and a seamless onboarding flow for new clients.
