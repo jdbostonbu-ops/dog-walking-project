@@ -2,6 +2,7 @@
 A comprehensive service-based web application for dog walking, boarding, and grooming.
 
 ### 🦴 Key Technical Features
+- **Compatibility** Mobile Compatibilty for iOS/Tablet/iPad
 - **Dynamic User Interface**: Features a custom "Animated Banner" and a responsive navigation system designed for high conversion rates.
 - **Micro-Interaction Design**: Clean, semantic HTML5 structure with a dedicated `data-router-wrapper` to support smooth page transitions.
 - **Service-Oriented Layout**: Optimized for local SEO, including business-critical information (GPS tracking simulation, real-time updates, and direct messaging features).
