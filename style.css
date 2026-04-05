@@ -215,3 +215,37 @@ img {
     margin: 0 auto;
   }
 }
+
+/* TEMPLATE CSS TO WARN USERS TO REDUCE SCREEN SIZE TO 50% TO GET THE BEST EXPERIENCE */
+.mobile-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8); /* Dims the background image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.warning-box {
+  background: lavender;
+  color: black;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 80%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.warning-box button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
