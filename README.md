@@ -34,5 +34,5 @@ A comprehensive service-based web application for dog walking, boarding, and gro
 - **Styling**: CSS3 (Flexbox for the index-presentation grid and custom animations)
 - **Concepts**: App-integration simulation, User-centric design, Local Business SEO
 
-### 🐕 Project Goal
+# 🐕 Project Goal
 The goal of this project was to create a trustworthy, high-performance interface for a pet services business, focusing on clear communication and a seamless onboarding flow for new clients.
