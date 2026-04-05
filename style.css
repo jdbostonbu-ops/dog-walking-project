@@ -218,16 +218,16 @@ img {
 
 /* TEMPLATE CSS TO WARN USERS TO REDUCE SCREEN SIZE TO 50% TO GET THE BEST EXPERIENCE */
 .mobile-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.8); /* Dims the background image */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.85); /* Makes it a dark "pop up" */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000; /* Puts it on top of everything */
 }
 
 .warning-box {
