@@ -74,20 +74,22 @@ text.split("").forEach((letter, index) => {
 // LISTENING TO MY <TEMPLATE> //
 document.addEventListener("DOMContentLoaded", () => {
     
-    // Check if the user is on an iPhone
-    const isIphone = /iPhone|iPod/.test(navigator.userAgent) || 
-                     (navigator.platform === 'iPhone');
+    // Keeping your check (or forcing 'true' for testing)
+    const isIphone = /iPhone|iPod/.test(navigator.userAgent);
 
-    if (true) {
+    if (true) { // Set to 'true' to test on your computer first!
         const template = document.getElementById('iphone-warning-template');
-        const clone = template.content.cloneNode(true); // "Stamp" the content
+        
+        // FIX: Use document.importNode directly
+        const clone = document.importNode(template.content, true); 
+        
         document.body.appendChild(clone);
     }
 });
 
-// Function to remove the warning when they click the button
 function closeWarning() {
     const overlay = document.querySelector('.mobile-overlay');
     if (overlay) overlay.remove();
 }
+
 
