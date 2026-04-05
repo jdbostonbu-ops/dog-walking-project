@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const isIphone = /iPhone|iPod/.test(navigator.userAgent) || 
                      (navigator.platform === 'iPhone');
 
-    if (isIphone) {
+    if (true) {
         const template = document.getElementById('iphone-warning-template');
         const clone = template.content.cloneNode(true); // "Stamp" the content
         document.body.appendChild(clone);
