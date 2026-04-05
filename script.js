@@ -73,8 +73,10 @@ text.split("").forEach((letter, index) => {
 
 // LISTENING TO MY <TEMPLATE> //
 document.addEventListener("DOMContentLoaded", () => {
+    
     // Check if the user is on an iPhone
-    const isIphone = /iPhone/i.test(navigator.userAgent);
+    const isIphone = /iPhone|iPod/.test(navigator.userAgent) || 
+                     (navigator.platform === 'iPhone');
 
     if (isIphone) {
         const template = document.getElementById('iphone-warning-template');
