@@ -1,6 +1,10 @@
 # Ruff | Professional Pet Care Platform 🐾
 A comprehensive service-based web application for dog walking, boarding, and grooming.
 
+## 👤 Author
+**Jacqueline**  
+[Check out my GitHub Profile](https://github.com/jdbostonbu-ops)
+
 ### 🦴 Key Technical Features
 - **Compatibility**: Mobile Compatibilty for iOS/Tablet/iPad
 - **Dynamic User Interface**: Features a custom "Animated Banner" and a responsive navigation system designed for high conversion rates.
