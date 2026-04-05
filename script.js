@@ -74,16 +74,17 @@ text.split("").forEach((letter, index) => {
 // LISTENING TO MY <TEMPLATE> //
 document.addEventListener("DOMContentLoaded", () => {
     
-    // Keeping your check (or forcing 'true' for testing)
-    const isIphone = /iPhone|iPod/.test(navigator.userAgent);
+    // Test on Mac and iPhone by keeping this 'true'
+    const isIos = true; 
 
-    if (true) { // Set to 'true' to test on your computer first!
+    if (isIos) {
         const template = document.getElementById('iphone-warning-template');
         
-        // FIX: Use document.importNode directly
-        const clone = document.importNode(template.content, true); 
-        
-        document.body.appendChild(clone);
+        if (template) {
+            // STAMPING: Using the more reliable importNode instead of clone
+            const stampedContent = document.importNode(template.content, true); 
+            document.body.appendChild(stampedContent);
+        }
     }
 });
 
