@@ -71,4 +71,21 @@ text.split("").forEach((letter, index) => {
     textContainer.appendChild(span);
 });
 
+// LISTENING TO MY <TEMPLATE> //
+document.addEventListener("DOMContentLoaded", () => {
+    // Check if the user is on an iPhone
+    const isIphone = /iPhone/i.test(navigator.userAgent);
+
+    if (isIphone) {
+        const template = document.getElementById('iphone-warning-template');
+        const clone = template.content.cloneNode(true); // "Stamp" the content
+        document.body.appendChild(clone);
+    }
+});
+
+// Function to remove the warning when they click the button
+function closeWarning() {
+    const overlay = document.querySelector('.mobile-overlay');
+    if (overlay) overlay.remove();
+}
 
