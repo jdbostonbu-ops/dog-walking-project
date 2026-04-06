@@ -15,7 +15,7 @@ A comprehensive service-based web application for dog walking, boarding, and gro
 | :--- | :--- | :--- |
 | **All Desktop Browsers** | ✅ Optimized | Full support for hover-triggered audio and letter animations. |
 | **iPad / Tablets** | ✅ Optimized | Fluid touch-interaction for seamless letter "pop-ups." |
-| **iPhone (iOS)** | ✅ Compatible | **Requires 50% Zoom** for optimal layout scaling; looks and performs lovely. |
+| **iPhone (iOS)** | ✅ Compatible | **Requires 50% Zoom** for optimal layout scaling; looks and performs lovely on landscape. |
 
 > **🎨 User Experience Note:** To see the full visual layout on iPhone, use the browser's "AA" menu to **zoom out to 50%**. 
 >
