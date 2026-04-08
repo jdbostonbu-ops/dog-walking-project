@@ -7,15 +7,17 @@ A comprehensive service-based web application for dog walking, boarding, and gro
 
 🚀 **[View the Dog Walking Project](https://jdbostonbu-ops.github.io/dog-walking-project/)**
 
-
 # 🌐 Browser & Device Compatibility
 
-
-| Browser / Device | Status | Performance Notes |
-| :--- | :--- | :--- |
-| **Google Chromes** | ✅ Optimized | Full support for hover-triggered audio and letter animations. |
-| **iPad / Tablets** | ✅ Optimized | Fluid touch-interaction for seamless letter "pop-ups." |
+| Platform / Browser | Status | Features | Notes |
+| :--- | :--- | :--- | :--- |
+| **Google Chrome / Edge** | ✅ Optimized | Audio + Animations | Full support for hover-triggered events and letter animations. |
+| **Safari (iPad) / Tablets** | ✅ Supported | Audio + Animations | Optimized via iPadOS pointer & Apple Pencil hover.  Fluid touch-interaction for seamless letter "pop-ups." |
+| **Safari (MacBook)** | ⚠️ Limited | Animations Only | **Audio blocked** by macOS autoplay security policies.* |
 | **iPhone (iOS)** | ✅ Compatible | **Requires 50% Zoom** for optimal layout scaling; looks and performs lovely on landscape. |
+
+> [!NOTE]  
+> *On **Safari for macOS**, hover-triggered audio is restricted until the user performs at least one manual click on the page to "unlock" the audio context.
 
 > **🎨 User Experience Note:** To see the full visual layout on iPhone, use the browser's "AA" menu to **zoom out to 50%**. 
 >
